@@ -15,4 +15,4 @@
     pyinstaller --onefile --icon=icon.ico --distpath ./ app.py
 ```
 
->> ใส่คำที่ต้องการในไฟล์ `words.txt` (1 คำ : 1 บรรทัด)
+**ใส่คำที่ต้องการในไฟล์ `words.txt` (1 คำ : 1 บรรทัด)**
