@@ -7,7 +7,7 @@ import os
 from screeninfo import get_monitors
 
 def render_multiline_text_with_fading_stroke(text, font, text_color, stroke_color, screen, screen_width, line_height):
-    lines = text.split('\n')  # Split the text into lines
+    lines = text.split("@")  # Split the text into lines
     y = screen.get_height() // 2 - (len(lines)-1) * line_height // 2  # Calculate starting y position
 
 
@@ -15,8 +15,8 @@ def render_multiline_text_with_fading_stroke(text, font, text_color, stroke_colo
     for line in lines:
         text_surface = font.render(line, True, stroke_color)
         text_rect = text_surface.get_rect(center=(screen_width // 2, y))
-        screen.blit(text_surface, (text_rect.x+2, text_rect.y+2))
-        screen.blit(text_surface, (text_rect.x-2, text_rect.y-2))
+        screen.blit(text_surface, (text_rect.x+3, text_rect.y+3))
+        screen.blit(text_surface, (text_rect.x-3, text_rect.y-3))
 
         y += line_height  # Move y position down for the next line
 
@@ -63,6 +63,8 @@ fps = int(video.get(cv2.CAP_PROP_FPS))
 with open("words.txt", 'r', encoding='utf-8') as file:
     # Read lines from the file and strip any extra whitespace
     words = [line.strip() for line in file]
+
+
 
 font_size = 120
 font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
@@ -138,7 +140,7 @@ while running:
     
     
     text_color = (0, 0, 0)  # White color for the text
-    line_height = 100
+    line_height = font_size + 25
     # render_multiline_text(current_word, font, text_color, screen, screen.get_width(), line_height)
     render_multiline_text_with_fading_stroke(current_word, font, (255,255,255),text_color, screen, screen.get_width(), line_height)
     

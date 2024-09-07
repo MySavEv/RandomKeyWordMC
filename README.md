@@ -4,9 +4,9 @@
     # 1
     python -m venv .venv
     # 2
-    .venv/script/activate
+    ./.venv/scripts/activate
     # 3
-    pip install -r requirement.txt
+    pip install -r requirements.txt
 ```
 
 ## Build EXE file
