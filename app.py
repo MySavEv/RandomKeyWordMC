@@ -41,13 +41,16 @@ root.withdraw()
 
 if len(monitors) > 1:
     second = monitors[1]
-
-screen_width = second.width
-screen_height = second.height
-second_screen_width = second.x  # Assuming the second screen is positioned to the right
-os.environ['SDL_VIDEO_WINDOW_POS'] = f"{second_screen_width},0"
+    screen_width = second.width
+    screen_height = second.height
+    second_screen_width = second.x  # Assuming the second screen is positioned to the right
+    os.environ['SDL_VIDEO_WINDOW_POS'] = f"{second_screen_width},0"
+else:
+    screen_width = 1920
+    screen_height = 1080
+    
 # Create the window on the second monitor
-screen = pygame.display.set_mode((screen_width, screen_height), pygame.ANYFORMAT)
+screen = pygame.display.set_mode((screen_width, screen_height),pygame.NOFRAME)
 pygame.display.set_caption("Random Word Game")
 
 # Load the video using OpenCV
@@ -60,8 +63,10 @@ fps = int(video.get(cv2.CAP_PROP_FPS))
 with open("words.txt", 'r', encoding='utf-8') as file:
     # Read lines from the file and strip any extra whitespace
     words = [line.strip() for line in file]
-    
-font = pygame.font.SysFont("Kanit-Medium", 120)
+
+font_size = 120
+font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
+
 current_word = "KEYWORD"
 
 # Setup a clock
@@ -88,6 +93,13 @@ while running:
                 running = False
             elif event.key == pygame.K_k:
                 current_word = "KEYWORD"
+            elif event.key == pygame.K_UP:
+                font_size += 10
+                font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
+            elif event.key == pygame.K_DOWN:
+                font_size -= 10
+                font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
+
 
     # Get the video frame
     ret, frame = video.read()
