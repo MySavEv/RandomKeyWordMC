@@ -50,7 +50,7 @@ else:
     screen_height = 1080
     
 # Create the window on the second monitor
-screen = pygame.display.set_mode((screen_width, screen_height),pygame.NOFRAME)
+screen = pygame.display.set_mode((screen_width, screen_height),pygame.NOFRAME )
 pygame.display.set_caption("Random Word Game")
 
 # Load the video using OpenCV
@@ -66,7 +66,7 @@ with open("words.txt", 'r', encoding='utf-8') as file:
 
 
 
-font_size = 120
+font_size = 100
 font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
 
 current_word = "KEYWORD"
@@ -101,8 +101,7 @@ while running:
             elif event.key == pygame.K_DOWN:
                 font_size -= 10
                 font = pygame.font.Font("./Kanit-Medium.ttf", font_size)
-
-
+        
     # Get the video frame
     ret, frame = video.read()
     if not ret:

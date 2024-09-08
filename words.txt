@@ -1,29 +1,30 @@
-สังคมขนมชั้น
-Food west
-Mental health@ภาวะทางจิต
+Thai layered dessert society@สังคมขนมชั้น
+Food waste@ขยะอาหาร
+Mental health@สุขภาพจิต
 Silver age@กลุ่มผู้สูงอายุที่มีเงิน
-Butterfly effect
-ระบบปิตาธิปไตย
-Feminist
-Rainbow washing
-Children right : สิทธิเด็ก
+Butterfly effect@ทฤษฎีผีเสื้อขยับปีก
+Patriarchy@ระบบปิตาธิปไตย
+Feminist@ผู้สนับสนุนสิทธิและ@ความเสมอภาคของสตรี
+Rainbow washing@การตลาดตบตาบนผืนผ้าสีรุ้ง
+Children right สิทธิเด็ก
 Meta verse@โลกเสมือนจริง
-คนชายขอบ
-ทรัพย์สินทางปัญญา
-Alpha generation
-sex worker
-tribute@ส่วยโลกสวย
+Marginal People@คนชายขอบ
+Intellectual property@ทรัพย์สินทางปัญญา
+Alpha generation เจนอัลฟ่า
+sex worker@อาชีพให้บริการทางเพศ
+tribute ส่วย
+Optimistic@โลกสวย
 Red fleg
-Burn out
-Global citizens
-ความเสมอภาค
-International@medical@hab
-ธรรมจักร
+Burn out@ภาวะหมดไฟ
+Global citizen@พลเมืองโลก
+Equality@ความเสมอภาค
+International medical hub@ศูนย์กลางทาง@การแพทย์นานาชาติ
+ตราธรรมจักร
 ยูงทอง
-ภาวะผู้นำ
-เสรีนิยม
-อนุรักษ์นิยม
-คุณค่า
-รั้งท้าย
-ความตาย
-ยุคดิจิตัล
+Leadership@ภาวะผู้นำ
+Liberalism@เสรีนิยม
+Conservative@อนุรักษ์นิยม
+Value@คุณค่า
+Trailing@รั้งท้าย
+Mortality@ความตาย
+Digital age@ยุคดิจิตัล
